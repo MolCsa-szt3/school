@@ -1,0 +1,18 @@
+link: https://www.codewars.com/kata/57680d0128ed87c94f000bfd/train/python
+
+code:
+
+def find_word(board, word):
+    board_lenght = len(board)
+    def letter_check(current_board, xy, searched_letter):
+        #xy is [x,y]
+        available_spaces = [[x-1,y-1],[x-1,y],[x-1,y+1],[x,y-1],[x,y+1],[x+1,y-1],[x+1,y],[x+1,y+1]]
+        for space in available_spaces:
+            if space[0] not in range(board_lenght) or space[1] not in range(board_lenght):
+                continue
+            if current_
+    
+    local_board = board
+    
+    # write your code here
+    return False
