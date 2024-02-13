@@ -31,5 +31,8 @@ public class Operators{
         System.out.println("string + char1+ char2: " + szoveg + karakter + karakter2);
         System.out.println("integer1 + integer2: " + (szam + szam2));
         System.out.println("double1 + double2: " + (lebeg + lebeg2));
+        System.out.println("integer1 / integer2: " + (szam / szam2));
+        System.out.println("integer1 - double2: " + (szam - lebeg2));
+        System.out.println("double1 * integer2: " + (lebeg * szam2));
     }
 }
