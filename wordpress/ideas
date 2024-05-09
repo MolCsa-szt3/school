@@ -1,6 +1,10 @@
 themes: Blocksy/Raft
 
-colors: bisexual lighing
+colors: 
+    base: bisexual lighing
+    MH: green
+    Pizza tower: purple
+    Archipelago: Blue
 page ideas: 
     -MH
     -Archipelago
