@@ -63,9 +63,33 @@ When the Valor Gauge fills up, it turns red and starts to slowly drain. While it
 If the Gauge fully empties, the gauge turns blue and the moveset switches back.
 Can select 1 Hunter Art.
 
-SP Mode:Valor Gauge fills faster. 
+SP Mode: Valor Gauge fills faster. 
 
 -Alchemy Style
 Provides 3 hunter arts, and the Alchemy Barrel and Gauge. The Alchemy Barrel can provide various items at the cost of Alchemy Gauge, like special whetstones that increase Hunter Arts gain or Earplugs that can stop 1 flinch from roars.
 Can set up to 3 hunter arts as SP Hunter Arts, and creating Alchemy items levels up the SP Hunter Arts.
 Moveset is simplified with some moves granting increased Alchemy Gauge gain.
+
+SP Mode: Increased Alchemy Gauge gain.
+
+
+---Hunter Arts
+
+Hunter Arts provide a great amount of customizability on what you can do during the hunts. Some are useable with all weapons, while most are locked to 1 weapon. Here are some of my favorites:
+
+-Absolute Evasion/Readiness
+A pair of hunter arts that do a big evasion with great amount of I-frames. Evasion sheathes the weapon and is really quick to charge, while Readiness unsheathes your weapon and depending on weapon type, sharpens it and/or reloads it, at the cost of a bit longer charge required.
+
+-Full House
+A LBG specific hunter art that loads in ALL ammunition into the gun and lets you cycle between ammo types without needing to load the one you want to use. Levels 1 and 2 don't load Rapid Fire ammo while level 3 does.
+
+-MoonCleaver[check for actual name]
+A GS specific art that lets you do Big Swing for Big Damage, with high partbreak values and possibility for a Mount.
+
+-On a note on SP arts:
+SP arts require higher charge to execute but provides Hunting Style[link to page] specific bonuses.
+Alchemy Style and Beast Prowlers can providee higher level SP mode for themselves and allies. Each level grants all the benefits before it and a new one:
+-- Level 2 does [thing]
+-- Level 3 does [thing]
+-- Level 4 does [thing]
+
