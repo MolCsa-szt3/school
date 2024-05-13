@@ -28,9 +28,9 @@ public class ShoppingList {
 
     }
 
-    public static boolean doWeHaveThat(LinkedList<String> lista, String item){
+    public static String doWeHaveThat(LinkedList<String> lista, String item){
         
-        return lista.contains(item);
+        return lista.contains(item)?"yes":"no";
     }
 
 }
