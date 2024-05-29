@@ -46,13 +46,31 @@ def main(page: ft.Page):
         label="Swordmaster", on_change=weapon_switch,
     )
 
+    
+
+    textbawx = ft.Text(
+        value=""
+    )
+
+    def check_things(e):
+        text = droppu.value
+        text += "\n" +nev.value
+        textbawx.value = text
+
+    check = ft.TextButton(
+        width=100,
+        content="Send",
+        on_click=check_things
+    )
+
     col = ft.Column(
         [
         nev,
         nem, ft.Slider(min=0, max=2, divisions=2, on_change=slider_changed, width=100),
         ft.Text("Melyik mainline Monster Hunter-el játszottál legelőször:"), droppu,
         ft.Text("Meddig jutottál megmesszebb egy Moster Hunter-ban:"), radio,
-        ft.Text("Swordmaster or Gunner?"),weaponswitch
+        ft.Text("Swordmaster or Gunner?"),weaponswitch,
+        check, textbawx
         ],
         alignment= ft.alignment.center,
         width=300
@@ -60,7 +78,6 @@ def main(page: ft.Page):
     )
     BigBoiBox = ft.Container(
         content=col,
-        width=300,
         alignment= ft.alignment.center
     )
     page.add(BigBoiBox)
