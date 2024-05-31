@@ -47,21 +47,25 @@ def main(page: ft.Page):
     )
 
     
+    def check_things(e):
+        temp = droppu.value
+        temp += "\n" + nev.value
+        # TODO: add more
+        textbawx.value += temp
+        page.update()
+
 
     textbawx = ft.Text(
         value=""
     )
 
-    def check_things(e):
-        text = droppu.value
-        text += "\n" +nev.value
-        textbawx.value = text
-
     check = ft.TextButton(
         width=100,
-        content="Send",
+        text="Send",
         on_click=check_things
     )
+
+    
 
     col = ft.Column(
         [
