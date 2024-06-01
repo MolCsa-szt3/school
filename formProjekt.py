@@ -16,7 +16,6 @@ def main(page: ft.Page):
     
     
     droppu = ft.Dropdown(
-        hint_text="Monster Hunter",
         options=[
             ft.dropdown.Option("Még nem játszottam"),
             ft.dropdown.Option("Korábbival/ nincs a listán"),
@@ -25,7 +24,8 @@ def main(page: ft.Page):
             ft.dropdown.Option("MH Gen / MHGU"),
             ft.dropdown.Option("MH World:Iceborne"),
             ft.dropdown.Option("MH Rise: Runbreak"),
-        ]
+        ],
+        value= "Még nem játszottam"
     )
     
 
@@ -34,7 +34,9 @@ def main(page: ft.Page):
             ft.Radio(value="LR", label="Low Rank / nem játszottam"),
             ft.Radio(value="HR", label="High Rank"),
             ft.Radio(value="G/MR", label="G Rank / Master Rank")
-        ])
+        ]),
+        value="LR"
+
     )
     
 
@@ -48,10 +50,14 @@ def main(page: ft.Page):
 
     
     def check_things(e):
-        temp = droppu.value
-        temp += "\n" + nev.value
+        temp = nev.value if nev.value != "" else "Anonynomus"
+        temp += "\n" + nem.value
+        temp += "\n" + droppu.value
+        temp += "\n" + radio.value
+        temp += "\n" + weaponswitch.label
+
         # TODO: add more
-        textbawx.value += temp
+        textbawx.value = temp
         page.update()
 
 
