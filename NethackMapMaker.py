@@ -82,9 +82,14 @@ def wallCheck(rawText):
         for char in range(len(lines[line])):
             def wallSub(offset):
                 try: 
+                    if(line + offset[0] not in range(len(lines)) or char + offset[1] not in range(len(lines[line]))):
+                        raise Exception()
                     return (lines[line + offset[0]][char + offset[1]])
                 except:
-                    return " "
+                    print()
+                    print(offset)
+                    print([line,char])
+                    return "x"
             #print("[" +str(line) + "," + str(char) + "]")
             #print(lines[line][char])
             if lines[line][char] == "W":
