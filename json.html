@@ -7,17 +7,12 @@
     <script>
         function intolist(things){
             let html = "<ul>"
-            console.log(things[0])
                     for (const key in things){ 
                         if(typeof(things[key]) == "object"){
-                            
                             html +=`<li>${key} : ${intolist(things[key])}</li>`
                         } 
                         else html +=`<li>${key} : ${things[key]}</li>`
-                        
                     }
-                
-            
             html += "</ul>"
             return html;
         }
@@ -31,7 +26,6 @@
                     let html = "<ul>"
                     for (const key in element){
                         if(typeof(element[key]) == "object"){
-                            
                             html +=`<li>${key} : ${intolist(element[key])}</li>`
                         } 
                         else html +=`<li>${key} : ${element[key]}</li>`
@@ -40,10 +34,8 @@
                     div.innerHTML += html
                 }
                 )
-                }
+            }
             )
-            
-            
         }
     </script>
 </head>
