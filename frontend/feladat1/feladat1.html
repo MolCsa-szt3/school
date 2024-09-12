@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feladat1</title>
+</head>
+<body>
+    <input type="text" name="in" id="in">
+    <input type="button" value="Bead" onclick="addToList()">
+    <script>
+        var list = []
+        let inputField = document.getElementById("in")
+        function addToList() {
+            list.push(inputField.value)
+            console.log(list)
+        }
+    </script>
+</body>
+</html>
