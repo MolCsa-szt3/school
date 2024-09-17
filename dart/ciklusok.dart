@@ -62,5 +62,24 @@ void main() {
   }
   
   //6. feladat
+  String text = "text";
+  List<String> textList = text.split("");
+  var maganhangzok = "aeiou".split("");
+  for (int i = textList.length - 1; i >= 0; i--) {
+    if (maganhangzok.contains(textList[i])) {
+      textList.removeAt(i);
+    }
+  }
+  String textAfter = "";
+  for (String betu in textList) {
+    textAfter += betu;
+  }
+  print(textAfter);
   
+  print("");
+  //7. feladat
+  text = "text";
+  for (String betu in text.split("")){
+    print(betu + ", " + betu.runes.toString());
+  }
 }
