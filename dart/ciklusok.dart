@@ -53,5 +53,14 @@ void main() {
   print("");
   //5. feladat
   
+  int intIn4 = 346;
+
+  numToString = intIn4.toString().split("");
+  for (var hex in numToString) {
+    //print(hex);
+    print(int.parse(hex) * int.parse(hex));
+  }
+  
+  //6. feladat
   
 }
