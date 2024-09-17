@@ -82,4 +82,40 @@ void main() {
   for (String betu in text.split("")){
     print(betu + ", " + betu.runes.toString());
   }
+  
+  print("");
+  //8. feladat
+  
+  String fizzbuzz = "";
+  int count = 30;
+  
+  for (int i = 1; i <= count; i++){
+    fizzbuzz = "";
+    if (i % 3 == 0) fizzbuzz += "Fizz";
+    if (i % 5 == 0) fizzbuzz += "Buzz";
+    print(fizzbuzz == ""?i:fizzbuzz);
+  }
+  
+  print("");
+  //9. feladat
+   for (int i = 1; i <= 6; i++) {
+    for (int j = 1; j <= 6; j++){
+      print(i * j);
+      if(i* j == 9) break;
+    }
+  }
+  
+  print("");
+  //10. feladat
+  bool toBreak = false;
+   for (int i = 1; i <= 6; i++) {
+    for (int j = 1; j <= 6; j++){
+      print(i * j);
+      if(i* j == 9){
+        toBreak = true;
+        break;
+      } 
+    }
+    if (toBreak) break;
+  }
 }
