@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="feladat2.js"></script>
+</head>
+<body>
+        <label for="kereszt">Keresznév:</label><br>
+        <input type="text" id="kereszt" name="kereszt"><br>
+        <label for="vezetek">Vezetéknév:</label><br>
+        <input type="text" id="vezetek" name="vezetek"><br>
+        <label for="kedvSzam">Kedvenc szám:</label><br>
+        <input type="text" id="kedvSzam" name="kedvSzam">
+        <fieldset style="width: 30%;">
+            <legend>Jogasítvány</legend>
+            <!-- Az azonos name attribútum biztosítja, hogy egyidejűleg csak radio gombot tudjak kijelölni! -->
+            <p>Van: <input type="radio" name="jogsi" value="van"></p>
+            <p>Nincs: <input type="radio" name="jogsi" value="nincs"></p>
+        </fieldset>
+        <input type="button" value="Beadás" onclick="submit()">
+        <div class="gombok">
+            <input type="button" onclick="check(true)" value="Van jogsi">
+            <input type="button" onclick="check(false)" value="Nincs jogsi">
+        </div>
+
+    <div id="adatok"></div>
+    <p id="nevek"></p>
+    <!-- nevek is temporary -->
+    <style>
+        .gombok{
+            margin: 15px;
+        }
+        div>input{
+            margin: 10px;
+        }
+    </style>
+</body>
+</html>
