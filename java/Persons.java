@@ -1,9 +1,9 @@
 import java.text.MessageFormat;
 
 class Person{
-    String name;
-    int age;
-    String gender;
+    private String name;
+    private int age;
+    private String gender;
 
     public Person(String nev, int age, String gender){
         this.name = nev;
@@ -11,11 +11,11 @@ class Person{
         this.gender = gender;
     }
 
-    void setGoal(){
+    public void setGoal(){
         System.out.println("Céom: Élj a pillanatnak!");
     }
 
-    void introduce(){
+    public void introduce(){
         System.out.println(MessageFormat.format("Szia, {0} vagyok, {1} éves {2}.",name, age, gender)); //idea stolen from StackOverflow
     }
 }
