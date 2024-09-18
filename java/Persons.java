@@ -23,8 +23,9 @@ class Person{
 public class Persons {
     public static void main(String[] args) {
         Person laci = new Person("László", 24, "férfi");
-        Person joe = new Person("Joe Mama", 69, "férfi");
+        Person joe = new Person("Joe Mama", 69, "male");
         Person kati = new Person("Kata", 21, "nő");
+        Person jane = new Person("Jane Doe", 30,"female");
         laci.introduce();
         laci.setGoal();
         joe.introduce();
