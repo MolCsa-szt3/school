@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="test.js"></script>
+</head>
+<body>
+    <p id="names"></p>
+    <input type="button" value="Változtat" onclick="showAll()"><br>
+    <div id="changer" style="display: none; border: 1px solid; padding: 5px;margin: 5px 0px;">
+        <input type="button" value="Hozzáad" onclick='show("add")'>
+        <input type="button" value="Változtat" onclick='show("change")'>
+        <input type="button" value="Töröl" onclick='show("del")'>
+        <div id="add" style="display: none;">
+            <label for="addText">Név: </label>
+            <input type="text" name="addText" id="addText"><br>
+            <label for="addID">KurzusId (tanulónak): </label>
+            <input type="text" name="addID" id="addID"><br>
+            
+            <input type="button" value="Új kurzus" onclick="AddCourse()">
+            <input type="button" value="Új tanuló" onclick="AddStudent()">
+            <br>
+        </div>
+        <div id="change" style="display: none;">change</div>
+        <div id="del" style="display: none;">
+            <label for="delID">Id: </label>
+            <input type="text" name="delID" id="delID"><br>
+            
+            <input type="button" value="Kurzus Törlése" onclick="DelCourse()">
+            <input type="button" value="Tanuló Törlése" onclick="DelStudent()">
+            <br>
+        </div>
+    </div>
+    <label for="kurzusok" >Kurzusok: </label>
+    <select name="kurzusok" id="kurzusok" onchange="change()"></select>
+    <h2 id="diakok" style="display: none;">Diákok:</h2>
+    <ul id="diakokLista"></ul>
+    
+</body>
+</html>
