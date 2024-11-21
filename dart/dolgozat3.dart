@@ -1,9 +1,9 @@
 import 'dart:io';
 
 void main(List<String> args) {
-  //feladat1();
-  //feladat2();
-  //feladat3();
+  feladat1();
+  feladat2();
+  feladat3();
   feladat4();
 }
 void feladat1(){
