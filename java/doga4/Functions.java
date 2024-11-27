@@ -29,4 +29,29 @@ public class Functions {
     }
     //szorgalmi later
 
+    public static boolean queens(String queen1, String queen2){
+        if (queen1.equals(queen2)) throw new IllegalArgumentException();
+        //check is same row/column
+        for (int i = 0; i < 2; i++) {
+            if(queen1.charAt(i) == queen2.charAt(i)) return true;
+        }
+        //time for jank
+        int[] queen1Pos = {Character.getNumericValue(queen1.charAt(1)),0};
+        int[] queen2Pos = {Character.getNumericValue(queen2.charAt(1)),0};
+        char[] rows = "ABCDEFGH".toCharArray();
+        for (int i = 0; i < rows.length; i++) {
+            if(queen1.charAt(0) == rows[i]) queen1Pos[1] = i;
+            if(queen2.charAt(0) == rows[i]) queen2Pos[1] = i;
+        }
+        //so now we have a rough estimate where on the board they are with only 1 number
+        int[] diff = {Math.abs(queen1Pos[0] - queen2Pos[0]),Math.abs(queen1Pos[1] - queen2Pos[1])};
+        //System.out.println(diff[0]);
+        //System.out.println(diff[1]);
+        if(diff[0] == diff[1]) return true;
+        return false;
+    }
+    public static void main(String[] args) {
+        queens("A1", "B3");
+    }
+
 }

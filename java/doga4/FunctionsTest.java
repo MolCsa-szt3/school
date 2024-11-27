@@ -142,4 +142,39 @@ public class FunctionsTest {
     public void isVowel_dot(){
         assertFalse(f.isVowel('.'));
     }
+
+    //bonusTime
+    @Test
+    public void queens_A1_B2(){
+        assertTrue(f.queens("A1", "B2"));
+    }
+    @Test
+    public void queens_A1_A8(){
+        assertTrue(f.queens("A1", "A8"));
+    }
+    @Test
+    public void queens_A1_B1(){
+        assertTrue(f.queens("A1", "B1"));
+    }
+    @Test
+    public void queens_C5_A3(){
+        assertTrue(f.queens("C5", "A3"));
+    }
+    @Test
+    public void queens_A1_B3(){
+        f.queens("A1", "B3");
+        assertFalse(f.queens("A1", "B3"));
+    }
+    @Test
+    public void queens_F7_H5(){
+        assertTrue(f.queens("A1", "B2"));
+    }
+    @Test
+    public void queens_A8_C1(){
+        assertFalse(f.queens("A8", "C1"));
+    }
+    @Test
+    public void queens_A1__C8(){
+        assertFalse(f.queens("A1", "C8"));
+    }
 }
