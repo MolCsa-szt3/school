@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    div {
+      display: flex;
+    }
+    .body {
+      margin: 50px auto;
+      flex-direction: column;
+      width: 90vw;
+      height: 500px;
+    }
+    .header {
+      flex: 1;
+      flex-direction: row;
+      background-color: purple;
+    }
+    .button {
+      width: 5%;
+      height: 16px;
+      margin: 0px 10px;
+      align-self: center;
+      background-color: aqua;
+    }
+    .main {
+      flex: 15;
+    }
+    .y {
+      flex: 5;
+      background-color: yellow;
+    }
+    .g {
+      flex: 3;
+      background-color: green;
+    }
+  </style>
+  <body>
+    <div class="body">
+      <div class="header">
+        <div class="button"></div>
+        <div class="button"></div>
+        <div class="button"></div>
+      </div>
+      <div class="main">
+        <div class="y"></div>
+        <div class="g"></div>
+      </div>
+    </div>
+  </body>
+</html>
